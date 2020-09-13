@@ -1,0 +1,17 @@
+total 56
+drwxrwxr-x 2 sebastian sebastian 4096 sep 12 16:21 .
+drwxrwxr-x 6 sebastian sebastian 4096 sep 12 11:46 ..
+-rwxrw-r-- 1 sebastian sebastian   32 sep 12 11:48 0-hello_world
+-rwxrw-r-- 1 sebastian sebastian   33 sep 12 12:07 1-confused_smiley
+-rwxrw-r-- 1 sebastian sebastian   28 sep 12 12:08 2-hellofile
+-rwxrw-r-- 1 sebastian sebastian   40 sep 12 12:11 3-twofiles
+-rwxrw-r-- 1 sebastian sebastian   29 sep 12 12:13 4-lastlines
+-rwxrw-r-- 1 sebastian sebastian   29 sep 12 12:16 5-firstlines
+-rwxrw-r-- 1 sebastian sebastian   41 sep 12 12:24 6-third_line
+-rwxrw-r-- 1 sebastian sebastian  194 sep 12 16:15 7-file
+-rwxrw-r-- 1 sebastian sebastian   92 sep 12 16:12 7-file~
+-rwxrw-r-- 1 sebastian sebastian   36 sep 12 16:19 8-cwd_state
+-rw-rw-r-- 1 sebastian sebastian   17 sep 12 16:15 \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:)
+-rw-rw-r-- 1 sebastian sebastian  800 sep 12 12:19 iacta
+-rw-rw-r-- 1 sebastian sebastian    0 sep 12 16:20 jjjjjj
+-rw-rw-r-- 1 sebastian sebastian    0 sep 12 16:21 ls_cwd_content
