@@ -1,4 +1,2 @@
 #!/bin/bash
-touch \\\*\\\\\'\""Holberton School"\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\) | echo "Holberton School" > \\\*\\\\\'\""Holberton School"\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)
-
-
+touch \\\*\\\\\'\""Holberton School"\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\) | printf "Holberton School\n" > \\\*\\\\\'\""Holberton School"\"\\\'\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)
