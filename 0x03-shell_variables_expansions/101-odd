@@ -1,3 +1,2 @@
 #!/bin/bash
 xargs -n2 | cut -d ' ' -f1
-xx
