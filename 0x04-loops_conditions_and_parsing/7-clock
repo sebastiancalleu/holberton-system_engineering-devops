@@ -2,18 +2,20 @@
 # This script is displaying a clock.
 
 horas=0
-horasmax=12
+horasmax=13
 segundos=60
 
 while [ $horasmax -ge $horas ]
 do
 	if [ $segundos = 60 ]
 	then
-		echo "Hour: $horas"
+		if [ $horas != 13 ]; then
+			echo "Hour: $horas"
+		fi
 		let segundos=1
 		let horas=$horas+1
 	fi
-	if [ $horas != 13 ]
+	if [ $horas != 14 ]
 	then
 		echo "$segundos"
 		let segundos=$segundos+1
