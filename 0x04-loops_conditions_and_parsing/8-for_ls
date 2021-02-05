@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 # This script display the content of a folder.
 
+
+
 for file in *
 do
-	echo $file
+	name=${file#*-}
+	echo "$name"
 done
