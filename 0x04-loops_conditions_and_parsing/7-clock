@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script is displaying a clock.
+
+horas=0
+horasmax=12
+segundos=60
+
+while [ $horasmax -ge $horas ]
+do
+	if [ $segundos = 60 ]
+	then
+		echo "Hour: $horas"
+		let segundos=1
+		let horas=$horas+1
+	fi
+	if [ $horas != 13 ]
+	then
+		echo "$segundos"
+		let segundos=$segundos+1
+	fi
+done

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script is displaying numbers to 20.
+
+contador=0
+termina=20
+
+while [ $termina -ge $contador ]
+do
+	echo $contador
+	case $contador in
+		4)
+			echo "bad luck from China"
+		;;
+		9)
+			echo "bad luck from Japan"
+		;;
+		17)
+			echo "bad luck from Italy"
+		;;
+	esac
+	let contador=$contador+1
+done

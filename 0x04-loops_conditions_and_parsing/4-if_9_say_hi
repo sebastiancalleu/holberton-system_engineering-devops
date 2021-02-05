@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displaying "Holberton School" 10 times.
+
+contador=0
+termina=10
+
+while [ $termina -ge $contador ]
+do
+	echo "Holberton School"
+	if [ $contador = 9 ]
+	then
+		echo "Hi"
+	fi
+	let contador=$contador+1
+done
