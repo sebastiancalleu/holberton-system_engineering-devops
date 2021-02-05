@@ -11,7 +11,7 @@ do
 		echo "bad luck"
 	elif [ $contador = 8 ]
 	then
-		echo "god luck"
+		echo "good luck"
 	else
 		echo "Holberton School"
 	fi
