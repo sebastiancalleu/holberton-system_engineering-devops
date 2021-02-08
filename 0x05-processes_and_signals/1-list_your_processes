@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# this script print all process
+
+ps -auxf

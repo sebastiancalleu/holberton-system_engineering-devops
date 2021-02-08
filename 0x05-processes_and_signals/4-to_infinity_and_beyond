@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# this script print str infinite times.
+
+count=0
+term=1
+while [ $count -ge $term ]
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
