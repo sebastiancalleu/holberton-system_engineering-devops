@@ -2,9 +2,8 @@
 # this script print infinite times.
 
 	trap 'echo "I am invincible!!!"' SIGTERM
-count=0
-term=1
-while [ $count -ge $term ]
+
+while true
 do
 	echo "To infinity and beyond"
 	sleep 2
