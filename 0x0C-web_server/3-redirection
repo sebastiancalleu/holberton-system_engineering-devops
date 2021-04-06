@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Script to install and configure Nginx listed in port 80 with a redirection
+apt-get -y update
+apt-get -y upgrade
+apt-get -y install nginx
+ufw allow  'Nginx HTTP'
+echo 'Holberton School' > /var/www/html/index.nginx-debian.html
+sed -i "46i redirection ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
+service nginx restart
