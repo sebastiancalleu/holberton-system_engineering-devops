@@ -2,4 +2,4 @@
 # this script fix the problem of web server to listen to port 80
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx restart
-pkill nginx
+service nginx stop
