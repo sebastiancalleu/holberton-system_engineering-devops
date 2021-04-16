@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this script fix the problem of web server to listen to port 80
+rm /etc/nginx/sites-enabled/default
+cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled
+pkill nginx
