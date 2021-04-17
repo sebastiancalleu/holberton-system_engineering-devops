@@ -4,7 +4,7 @@
 SUBS="www lb-01 web-01 web-02"
 DOMAIN=$1
 
-function ALLSUBS() {
+ALLSUBS() {
     for arg in $SUBS
     do
         echo -n "The subdomain $arg is a "
