@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# script to display data about the records of the DOMAIN
+
+SUBS="www lb-01 web-01 web-02"
+DOMAIN=$1
+
+function ALLSUBS() {
+    for arg in $SUBS
+    do
+        echo -n "The subdomain $arg is a "
+        dig "$arg"."$DOMAIN" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $4 " record and points to " $5}'
+    done
+}
+
+if [ $# -eq 2 ]
+then
+    echo -n "The subdomain $2 is a "
+    dig "$2"."$DOMAIN" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk '{print $4 " record and points to " $5}'
+else
+    ALLSUBS
+fi
