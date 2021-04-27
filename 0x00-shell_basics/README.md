@@ -1,42 +1,108 @@
-# Learning about shell commands
-the objetive of this project is to practice some of the most important shell commands, in continuation i am going to explain each script that i make.
+# 0x00. Shell, basics
 
-**0-current_working_directory**:this script has the funtion to print the absolute path name of the current working directory.
+## Resources:books:
+Read or watch:
+* [What Is “The Shell”?](https://intranet.hbtn.io/rltoken/pn2_LGNuA1yFY7zy3CQmig)
+* [Navigation](https://intranet.hbtn.io/rltoken/Hh8elGgCpj--6othR7S7GQ)
+* [Looking Around](https://intranet.hbtn.io/rltoken/84xsZOempqy5I7ZkueeIsg)
+* [A Guided Tour](https://intranet.hbtn.io/rltoken/Jp1c4V3hJiGBuVzYCtnQKw)
+* [Manipulating Files](https://intranet.hbtn.io/rltoken/wFwFXKQmSpmxYyvHvCIC-Q)
+* [Working With Commands](https://intranet.hbtn.io/rltoken/Aq3NVLBhgnQS6NYtHI8i4w)
+* [Reading Man pages](https://intranet.hbtn.io/rltoken/RohkjGiQtMHgPfj0N_k1Bw)
+* [Keyboard shortcuts for Bash](https://intranet.hbtn.io/rltoken/0HvJ2B_wSl6Oyshcn-OHrg)
+* [LTS](https://wiki.ubuntu.com/LTS)
+* [Shebang](https://intranet.hbtn.io/rltoken/ketzZf-802Fb-mSGkyPa4w)
 
-**1-listit**:this script display the contents of the current directory.
+---
+## Learning Objectives:bulb:
+What you should learn from this project:
 
-**2-bring_me_home**:this script changes the working directory to the user's home directory.
+* What does RTFM mean?
+* What is a Shebang
 
-**3-listfiles**:this script display current directory content in a long format.
+---
 
-**4-listmorefiles**:this script display current directory contents includin hidden files in long format.
+### [0. Where am I?](./0-current_working_directory)
+* Write a script that prints the absolute path name of the current working directory.
 
-**5-listfilesdigitonly**:this script display current directory contents in long format, with user and group IDs displayed numerically.
 
-**6-firstdirectory**:this script creates anew directory named holberton in the /tmp/ directory.
+### [1. What’s in there?](./1-listit)
+* Display the contents list of your current directory.
 
-**7-movethatfile**:this script move a file named betty from /tmp/ to /tmp/holberton.
 
-**8-firstdelete**:this script deletes the betty file.
+### [2. There is no place like home](./2-bring_me_home)
+* Write a script that changes the working directory to the user’s home directory.
 
-**9-firstdirdeletion**:this script deletes the directory holberton.
 
-**10-back**:this script changes the current working directory to the previous one.
+### [3. The long format](./3-listfiles)
+* Display current directory contents in a long format
 
-**11-lists**:this script display all content on the current directory, parent directory and the /boot directory.
 
-**12-file_type**:this script prints the type of file named iamafile.
+### [4. Hidden files](./4-listmorefiles)
+* Display current directory contents, including hidden files (starting with .). Use the long format.
 
-**13-symbolic_link**:this script creates a symbolic link to /bin/ls.
 
-**14-copy_html**:this script copy all the html files from the current working directory to the parent of the working directory.
+### [5. I love numbers](./5-listfilesdigitonly)
+* Display current directory contents.
 
-**15-lets_move**:this script moves the files beginning with an uppercase letter to the directory /tmp/u.
 
-**16-clean_emacs**:this script deletes all the files on the current directory that end with ~.
+### [6. Welcome holberton](./6-firstdirectory)
+* Create a script that creates a directory named holberton in the /tmp/ directory.
 
-**17-tree**:this script creates an entire path of directories.
 
-**18-commas**:this script list all the files and directories of the current directory separated by commas.
+### [7. Betty in Holberton](./7-movethatfile)
+* Move the file betty from /tmp/ to /tmp/holberton.
 
-## made by sebastian calle.
+
+### [8. Bye bye Betty](./8-firstdelete)
+* Delete the file betty.
+
+
+### [9. Bye bye Holberton](./9-firstdirdeletion)
+* Delete the directory holberton that is in the /tmp directory.
+
+
+### [10. Back to the future](./10-back)
+* Write a script that changes the working directory to the previous one.
+
+
+### [11. Lists](./11-lists)
+* Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
+
+
+### [12. File type](./12-file_type)
+* Write a script that prints the type of the file named iamafile. The file iamafile will be in the /tmp directory when we will run your script.
+
+
+### [13. We are symbols, and inhabit symbols](./13-symbolic_link)
+* Create a symbolic link to /bin/ls, named __ls__.
+The symbolic link should be created in the current working directory. 
+
+
+### [14. Copy HTML files](./14-copy_html)
+* Create a script that copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
+
+
+### [15. Let’s move](./15-lets_move)
+* Create a script that moves all files beginning with an uppercase letter to the directory /tmp/u.
+
+
+### [16. Clean Emacs](./16-clean_emacs)
+* Create a script that deletes all files in the current working directory that end with the character ~.
+
+
+### [17. Tree](./17-tree)
+* Create a script that creates the directories welcome/, welcome/to/ and welcome/to/holberton in the current directory.
+
+
+### [18. Life is a series of commas, not periods](./18-commas)
+* Write a command that lists all the files and directories of the current directory, separated by commas (,).
+
+
+### [19. File type: Holberton](./holberton.mgc)
+* Create a magic file holberton.mgc that can be used with the command file to detect Holberton data files. Holberton data files always contain the string HOLBERTON at offset 0.
+
+---
+
+## Author
+* **Sebastian Calle Uribe** - [sebastiancalleu](https://github.com/sebastiancalleu)
