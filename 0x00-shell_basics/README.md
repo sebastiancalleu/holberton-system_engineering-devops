@@ -105,4 +105,4 @@ The symbolic link should be created in the current working directory.
 ---
 
 ## Author
-* **Sebastian Calle Uribe** - [sebastiancalleu](https://github.com/sebastiancalleu)
+* **Sebastian** - [sebastiancalleu](https://github.com/sebastiancalleu)
