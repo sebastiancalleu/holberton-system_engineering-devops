@@ -2,7 +2,6 @@
 # script to run nginx as nginx user
 sudo service nginx stop
 sudo chmod 644 /etc/nginx/nginx.conf
-sed -i "s/listen 80 default_server;/listen 8080 default_server/g" /etc/nginx/sites-available/default
-sed -i "s/listen [::]:80 default_server ipv6only/listen [::]:8080 default_server ipv6only/g" /etc/nginx/sites-available/default
+sed -i "s/80 default_server/8080 default_server/" /etc/nginx/sites-available/default
 pkill apache2
 sudo -u nginx service nginx restart
