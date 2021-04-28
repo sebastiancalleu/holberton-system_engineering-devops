@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# script to change user
+sudo -u "$1" whoami
