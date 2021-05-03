@@ -14,7 +14,7 @@ if __name__ == "__main__":
     for i in todos:
         if i.get("userId") == int(sys.argv[1]):
             total_number_of_tasks += 1
-            if i.get("completed") == True:
+            if i.get("completed") is True:
                 number_of_done_tasks += 1
                 tasks += "\t " + i.get("title") + "\n"
 
@@ -22,5 +22,6 @@ if __name__ == "__main__":
         if i.get("id") == int(sys.argv[1]):
             employee_name = i.get("name")
 
-    print("Employee {} is done with tasks({}/{}):".format(employee_name, number_of_done_tasks, total_number_of_tasks))
+    print("Employee {} is done with tasks({}/{}):"
+          .format(employee_name, number_of_done_tasks, total_number_of_tasks))
     print(tasks, end="")
