@@ -3,7 +3,6 @@
 
 import requests
 import sys
-import json
 
 todos = requests.get("https://jsonplaceholder.typicode.com/todos").json()
 users = requests.get("https://jsonplaceholder.typicode.com/users").json()
