@@ -15,10 +15,10 @@ if __name__ == "__main__":
         if i.get("id") == int(sys.argv[1]):
             employee_name = i.get("username")
 
-    dct1 = {}
     lt1 = []
     for i in todos:
         if i.get("userId") == int(sys.argv[1]):
+            dct1 = {}
             dct1["task"] = i.get("title")
             dct1["completed"] = i.get("completed")
             dct1["username"] = employee_name
