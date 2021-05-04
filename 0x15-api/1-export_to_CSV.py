@@ -12,7 +12,7 @@ if __name__ == "__main__":
     filename = "{}.csv".format(sys.argv[1])
     for i in users:
         if i.get("id") == int(sys.argv[1]):
-            employee_name = i.get("name")
+            employee_name = i.get("username")
 
     with open(filename, 'w') as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
