@@ -13,7 +13,7 @@ if __name__ == "__main__":
         if i.get("id") == int(sys.argv[1]):
             employee_name = i.get("name")
 
-with open('USER_ID.csv', 'w', newline='') as file:
+with open('{}.csv'.format(sys.argv[1]), 'w', newline='') as file:
     writer = csv.writer(file)
     for i in todos:
         if i.get("userId") == int(sys.argv[1]):
