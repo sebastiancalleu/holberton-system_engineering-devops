@@ -13,9 +13,9 @@ if __name__ == "__main__":
         if i.get("id") == int(sys.argv[1]):
             employee_name = i.get("name")
 
-with open('{}.csv'.format(sys.argv[1]), 'w') as file:
-    writer = csv.writer(file, quoting=csv.QUOTE_ALL)
-    for i in todos:
-        if i.get("userId") == int(sys.argv[1]):
-            writer.writerow([sys.argv[1], employee_name,
-                             i.get("completed"), i.get("title")])
+    with open('{}.csv'.format(sys.argv[1]), 'w') as file:
+        writer = csv.writer(file, quoting=csv.QUOTE_ALL)
+        for i in todos:
+            if i.get("userId") == int(sys.argv[1]):
+                writer.writerow([sys.argv[1], employee_name,
+                                 i.get("completed"), i.get("title")])
