@@ -11,7 +11,7 @@ def top_ten(subreddit):
         "User-Agent": "user/0.0.2"
     }
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    data = requests.get(url, headers=user)
+    data = requests.get(url, headers=user, allow_redirects=False)
     if data.status_code == 200:
         dct = data.json()
         if not dct["data"]["children"]:
