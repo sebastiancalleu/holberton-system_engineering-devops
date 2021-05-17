@@ -14,8 +14,6 @@ def top_ten(subreddit):
     if data.status_code == 200:
         dct = data.json()
         posts = dct.get("data", {}).get("children", [])
-        if not posts:
-            print(None)
         for post in posts[:10]:
             toprint = post.get("data").get("title")
         print(toprint)
