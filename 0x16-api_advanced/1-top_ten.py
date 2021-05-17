@@ -17,5 +17,4 @@ def top_ten(subreddit):
         posts = dct["data"]["children"][:10]
         for post in posts:
             print(post["data"]["title"])
-        return(dct)
-    return(0)
+    print(None)
