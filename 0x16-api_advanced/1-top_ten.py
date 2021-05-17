@@ -15,7 +15,6 @@ def top_ten(subreddit):
         dct = data.json()
         posts = dct.get("data", {}).get("children", [])
         for post in posts[:10]:
-            toprint = post.get("data").get("title")
-        print(toprint)
+            print(post.get("data").get("title"))
     else:
         print(None)
