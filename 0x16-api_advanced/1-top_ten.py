@@ -18,6 +18,6 @@ def top_ten(subreddit):
         if not posts:
             print(None)
         for post in posts[:10]:
-            toprint = (post["data"]["title"])
+            toprint = post.get("data").get("title")
         print(toprint)
     print(None)
