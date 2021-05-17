@@ -14,9 +14,9 @@ def top_ten(subreddit):
     data = requests.get(url, headers=user, allow_redirects=False)
     if data.status_code == 200:
         dct = data.json()
-        if not dct["data"]["children"]:
-            print("None")
-        posts = dct["data"]["children"][:10]
-        for post in posts:
+        posts = dct.get("data", {}).get("children", [])
+        if not posts:
+            print(None)
+        for post in posts[:10]:
             print(post["data"]["title"])
-    print("None")
+    print(None)
