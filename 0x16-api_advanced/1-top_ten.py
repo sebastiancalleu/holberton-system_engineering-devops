@@ -19,4 +19,5 @@ def top_ten(subreddit):
         for post in posts[:10]:
             toprint = post.get("data").get("title")
         print(toprint)
-    print(None)
+    else:
+        print(None)
